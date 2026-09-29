@@ -1,0 +1,10 @@
+﻿# Keep the publish repo tiny. ONLY the self-contained workbench HTML belongs here.
+# The 41 MB static base (detail.csv) and the runtime venv must never land in
+# this repo: GitHub rejects files >100 MB and the repo would bloat fast.
+runtime/
+_build/
+*.csv
+Thumbs.db
+Desktop.ini
+.DS_Store
+*~
