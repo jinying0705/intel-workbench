@@ -4347,6 +4347,9 @@ window.__WB__ = { D, state, st2, st3, st4, st5, st6, st9,
 
   parseLoginToken();
   bind();
+  if (new URLSearchParams(location.search).has('feedback')) {
+    setTimeout(openDrawer, 0);
+  }
   if (isPreview()) {
     ui.identity.textContent = '未连接后端';
     ui.login.disabled = true;
